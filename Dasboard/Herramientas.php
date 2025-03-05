@@ -31,9 +31,9 @@ if($_SESSION["s_nombre"] == null){
         <ul class="nav_links">
             
         <li class="nav_item"><a href="traspaso.php" class="nav_link">Traspasos</a></li>
-        <li class="nav_item"><a href="empleados.php" class="nav_link">Salidas</a></li>
-        <li class="nav_item"><a href="empleos.php" class="nav_link">Entradas</a></li>
-        <li class="nav_item"><a href="clientes.php" class="nav_link">Compañeros</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Cotizacion</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Inventario</a></li>
+        <li class="nav_item"><a href="empleados.php" class="nav_link">Compañeros</a></li>
         <li onclick="cerrar()" class="nav_item"><a href="#" class="nav_link">Cerrar</a></li>
     </ul>
 

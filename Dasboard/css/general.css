@@ -17,7 +17,7 @@
     overflow: hidden;
 }
   .hero{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background: #001b67;
     background-size: cover;
     min-height: 1px;
@@ -124,3 +124,46 @@
 .table{
     background: rgb(149, 0, 255);
 }
+.moda{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000bd;
+display:flex ;
+opacity: 0;
+pointer-events: none;
+transition: opacity 1s;
+--transform: translateY(-100vh);
+--transition: transform 0.3s;
+}
+.modal--show{
+opacity: 1;
+pointer-events: unset;
+transition: opacity 1s;
+--transform: translateY(0vh);
+}
+.modal_container{
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: auto;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.modal_title{
+    font-size: 2.5rem;
+}
+.modal_paragraph{
+    margin-bottom:10px;
+}
+
+

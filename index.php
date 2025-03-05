@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="css/sweetalert2.css">
 </head>
 <body>
-<?php
-$encriptado = md5('mitzy1');
-echo $encriptado;
-?>
+
 <form id="formlogin" action="" method="post" class="form">
       <h1>Salud medica</h1>
       <hr>
@@ -29,7 +26,7 @@ echo $encriptado;
             <label for="password" class="form_label">Contraseña</label>
             <span class="form_line"></span>
           </div>
-          
+           
           <input type="submit" name="submit" class="form_submit" value="Iniciar">
           <div class="caja">
             <a href="nuevo.php" class="btn button-red">Registro</a>

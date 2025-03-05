@@ -38,9 +38,9 @@ $datos = mysqli_query($conexion, $c);
             }
         ?>
         </tbody>
-    </table>
-        </div>
-    
+   
+
+
     <script src="js/cerrar.js"></script>
 <script src="js/confirmacion.js"></script>
 <script src="../javascript/sweetalert2.all.min.js"></script>

@@ -11,7 +11,6 @@ $list = mysqli_fetch_array($tr);
 ?>
 <link rel="stylesheet" href="css/tabla.css">
 </header>
-
     <a href="formularios/empleado.php?id=<?php echo $ip; ?>" class="btn uno">nuevo</a> <br>
     <div class="table-responsive">
     <table class="table table-striped table-light table-hover">
@@ -37,6 +36,7 @@ $list = mysqli_fetch_array($tr);
             <td><?php
 
 if($list["sucursal"] == $dates["sucursal_S"] & $dates["usuario"] == 3){?>
+
     <a class='btn edit' href="php/entregado.php?id=<?php echo $ip;?>&num=<?php echo $dates["ID_traspaso"] ?>">Entregado</a>
     <?php
     }else{
@@ -64,9 +64,9 @@ if($list["sucursal"] == $dates["sucursal_S"] & $dates["usuario"] == 3){?>
             echo $sucursales["nombre1"]; 
             ?></td>
 
-            <td><?php
+            <td ><?php
             if($list["sucursal"] == $dates["sucursal_E"] & $dates["confirmacion"] == " "){?>
-            <a class='btn edit' href="php/edit_empleado.php?id=<?php echo $ip;?>&num=<?php echo $dates["ID_traspaso"] ?>">Confirmar</a>
+            <a class="btn edit boton">Confirmar</a>
             <?php
             }else{
                 $id = $dates["confirmacion"];
@@ -88,10 +88,29 @@ if($list["sucursal"] == $dates["sucursal_S"] & $dates["usuario"] == 3){?>
             }
         ?>
         </tbody>
-    </table>
+        </table>
         </div>
-    
+        <form id="formlogin" action="" method="post">
+        <section class="moda">
+        <div class="modal_container">
+                <h2 class="modal_title">Ingrese su contraseña</h2>
+                <div class="input-group">
+                <input type="password" class="form-control" placeholder="Usuario" aria-label="Recipient's username with two button addons">
+                <input type="password" class="form-control" placeholder="Escriba su contraseña" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-outline-secondary" type="button">Confirmar</button>
+                 <button class="btn btn-outline-secondary delete"  type="button">X</button>
+                 
+                </div>
+        </div>
+        </div>
+        
+    </section>
+    </form>
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="js/cerrar.js"></script>
+    <script src="../popper/popper.min.js"></script>
+    <script src="js/main.js"></script>
 <script src="js/confirmacion.js"></script>
 <script src="../javascript/sweetalert2.all.min.js"></script>
            
